@@ -70,7 +70,7 @@ export function TeamMatrix() {
               <ul className="mt-2 space-y-1.5">
                 {m.responsibilities.map((r) => (
                   <li key={r} className="flex gap-2 text-sm text-foreground/85">
-                    <span className={cn("mt-0.5", accent[m.color].split(" ")[1])}>▸</span>
+                    <span className={cn("mt-0.5", accent[m.color])}>▸</span>
                     {r}
                   </li>
                 ))}
