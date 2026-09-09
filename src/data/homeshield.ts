@@ -25,7 +25,7 @@ export const topologyNodes: TopologyNode[] = [
     sub: "ISP · 300 Mbps",
     zone: "externa",
     x: 50,
-    y: 8,
+    y: 7,
     detail:
       "Ponto de entrada não confiável. Todo tráfego chega via link do provedor e é obrigatoriamente inspecionado pelo perímetro antes de tocar qualquer host interno.",
     specs: ["IP dinâmico + DDNS", "Sem port-forward direto", "Somente VPN exposta (UDP/51820)"],
@@ -52,7 +52,7 @@ export const topologyNodes: TopologyNode[] = [
     sub: "AD DS · DNS · Hyper-V",
     zone: "core",
     x: 50,
-    y: 54,
+    y: 53,
     detail:
       "Núcleo de serviços: Active Directory, DNS interno com forwarders DoT, GPOs de hardening e coleta centralizada de eventos encaminhados para o SIEM (Wazuh).",
     specs: [
@@ -67,8 +67,8 @@ export const topologyNodes: TopologyNode[] = [
     label: "Rede IoT Isolada",
     sub: "VLAN 20 · sem rota lateral",
     zone: "isolada",
-    x: 15,
-    y: 80,
+    x: 12,
+    y: 88,
     detail:
       "Câmeras, lâmpadas, assistentes e TV. VLAN sem rota para a VLAN confiável, apenas saída controlada para nuvem dos fabricantes e mDNS proxy para descoberta.",
     specs: [
@@ -83,8 +83,8 @@ export const topologyNodes: TopologyNode[] = [
     label: "Estações de Trabalho",
     sub: "VLAN 10 · endpoints",
     zone: "confiavel",
-    x: 38,
-    y: 80,
+    x: 37,
+    y: 88,
     detail:
       "Notebooks e desktops da família, ingressados no domínio, com disco cifrado, EDR ativo e acesso remoto exclusivamente por VPN.",
     specs: [
@@ -100,7 +100,7 @@ export const topologyNodes: TopologyNode[] = [
     sub: "VLAN 30 · 3-2-1",
     zone: "confiavel",
     x: 63,
-    y: 80,
+    y: 88,
     detail:
       "Repositório imutável com snapshots. Recebe backups do servidor e dos endpoints; só o servidor de backup pode iniciar conexão, evitando criptografia por ransomware.",
     specs: [
@@ -115,8 +115,8 @@ export const topologyNodes: TopologyNode[] = [
     label: "Kali Linux (Lab)",
     sub: "VLAN 99 · red team",
     zone: "lab",
-    x: 86,
-    y: 80,
+    x: 88,
+    y: 88,
     detail:
       "Máquina ofensiva usada apenas em janelas de teste autorizadas. Simula reconhecimento, exploração e movimentação lateral para validar as defesas do HomeShield.",
     specs: [

@@ -40,10 +40,10 @@ export function Topology() {
   };
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[1.35fr_1fr]">
+    <div className="grid gap-6 lg:grid-cols-[1.75fr_1fr]">
       <div className="glass scan-line relative overflow-hidden rounded-xl p-4 sm:p-6">
         <div className="grid-bg absolute inset-0 opacity-40" aria-hidden="true" />
-        <div className="relative aspect-[4/3] w-full sm:aspect-[16/10]">
+        <div className="relative h-[430px] w-full sm:h-[520px]">
           <svg
             className="absolute inset-0 h-full w-full"
             viewBox="0 0 100 100"
@@ -82,7 +82,7 @@ export function Topology() {
                 onClick={() => setActive(n.id)}
                 aria-pressed={isActive}
                 className={cn(
-                  "absolute flex w-28 -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-1.5 rounded-lg border bg-surface-2/90 px-2 py-2.5 text-center transition-all hover:scale-[1.04] sm:w-36",
+                  "absolute flex w-24 -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-1.5 rounded-lg border bg-surface-2/90 px-2 py-2.5 text-center transition-all hover:scale-[1.04] sm:w-32",
                   zoneStyle[n.zone],
                   isActive && "glow-cyan pulse-node scale-[1.05]",
                 )}
