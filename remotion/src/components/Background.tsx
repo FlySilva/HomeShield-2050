@@ -1,6 +1,6 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame, interpolate } from "remotion";
-import { C } from "./theme";
+import { C } from "../theme";
 
 // Fundo persistente: gradiente + grid + linha de scan
 export const Background: React.FC = () => {
