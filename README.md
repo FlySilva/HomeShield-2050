@@ -70,11 +70,11 @@ npm run build
 
 ## Equipe
 
-- Arthur — Líder de Projeto / Arquitetura de Rede
-- Breno — Especialista em Firewall / Segurança de Perímetro
-- Carlos — Analista de Incidentes / SIEM e Monitoramento
-- Daniel — Engenheiro de Backup e Recuperação
-- Eduardo — Testador de Intrusão / Kali Linux
+- Gabryel Oliveira — Líder de Projeto / Arquitetura de Rede
+- Kauan — Especialista em Firewall / Segurança de Perímetro
+- Gabriel Santos — Analista de Incidentes / SIEM e Monitoramento
+- Gustavo — Engenheiro de Backup e Recuperação
+- Vago — Testador de Intrusão / Kali Linux
 
 ## Licença
 
