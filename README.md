@@ -1,32 +1,81 @@
-# HomeShield 2050 Docs
+# HomeShield 2050 — Smart Home Segura
 
-Crie uma landing page moderna e completa de documentação técnica para o projeto de infraestrutura e cibersegurança HomeShield 2050 (Smart Home Segura). Inclua:
-- Visão geral da arquitetura e proposta de valor
-- Topologia e diagramas de rede interativos (Internet -> Firewall -> Windows Server/VM -> IoT isolada, PC, Backup e Kali Linux)
-- Matriz dos 5 integrantes com seus papéis, responsabilidades e checklist detalhado de evidências individuais para a banca
-- Simulador interativo da narrativa de incidente em 4 etapas (Normalidade -> Simulação de ataque Kali -> Ação e contenção HomeShield -> Pós-incidente com logs e restauração de backup)
-- Seção de documentação técnica com abas para: Regras de Firewall, DNS Seguro, Configurações de VPN, Scripts de automação Python e Relatórios comparativos Nmap/OpenVAS
-- Design futurista e profissional voltado para cibersegurança (tema dark mode elegante, status badges, visualizadores de código e diagramas de fluxo).
+Landing page técnica e interativa do projeto **HomeShield 2050**, desenvolvida para documentar a arquitetura de infraestrutura e cibersegurança de uma residência inteligente protegida.
 
-This project was built with [Lovable](https://lovable.dev).
+## Sobre o projeto
 
-**Live app**: https://homeshield2050.lovable.app
+O HomeShield 2050 simula uma rede doméstica moderna com camadas de segurança, incluindo firewall, segmentação de rede, servidor Windows em VM, dispositivos IoT isolados, estações de trabalho, backup e uma máquina Kali Linux para testes ofensivos. A página apresenta a proposta de valor, topologia interativa, matriz da equipe, simulador de incidente e documentação técnica detalhada.
 
-## Build with Lovable
+## Funcionalidades
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/e782b18f-d7a9-451f-b45f-2a292f14aaa9).
+- **Visão geral da arquitetura**: camadas de segurança e proposta de valor.
+- **Topologia de rede interativa**: diagrama SVG clicável com detalhes técnicos de cada nó.
+- **Matriz da equipe**: 5 integrantes com papéis, responsabilidades e checklist de evidências para a banca.
+- **Simulador de incidente**: narrativa em 4 etapas — Normalidade, Ataque Kali, Contenção HomeShield e Pós-incidente.
+- **Documentação técnica**: abas com regras de firewall, DNS seguro, VPN, automação Python e relatórios Nmap/OpenVAS.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+## Tecnologias
 
-## Development
+- [TanStack Start](https://tanstack.com/start)
+- [React 19](https://react.dev)
+- [TypeScript](https://www.typescriptlang.org)
+- [Tailwind CSS v4](https://tailwindcss.com)
+- [Lucide React](https://lucide.dev)
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## Estrutura do projeto
+
+```text
+src/
+  components/homeshield/   # Componentes da landing page
+    DocsTabs.tsx           # Abas de documentação técnica
+    IncidentSimulator.tsx  # Simulador de incidente
+    TeamMatrix.tsx         # Matriz de equipe e evidências
+    Topology.tsx           # Diagrama de rede interativo
+  data/homeshield.ts       # Dados estáticos do projeto
+  routes/                  # Rotas do TanStack Start
+    __root.tsx             # Layout raiz
+    index.tsx              # Landing page principal
+  styles.css               # Tokens de tema e utilitários visuais
+```
+
+## Desenvolvimento local
+
+Requisitos: Node.js 20+ e Bun ou npm.
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+# Clonar o repositório
+git clone <repo-url>
+cd homeshield2050
+
+# Instalar dependências
+bun install
+# ou
+npm install
+
+# Iniciar o servidor de desenvolvimento
+bun dev
+# ou
 npm run dev
 ```
+
+O app estará disponível em `http://localhost:8080`.
+
+## Build para produção
+
+```sh
+bun run build
+# ou
+npm run build
+```
+
+## Equipe
+
+- Arthur — Líder de Projeto / Arquitetura de Rede
+- Breno — Especialista em Firewall / Segurança de Perímetro
+- Carlos — Analista de Incidentes / SIEM e Monitoramento
+- Daniel — Engenheiro de Backup e Recuperação
+- Eduardo — Testador de Intrusão / Kali Linux
+
+## Licença
+
+Projeto acadêmico. Uso educacional e demonstrativo.
