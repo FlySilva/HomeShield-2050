@@ -77,5 +77,3 @@ npm run build
 - Vago — Testador de Intrusão / Kali Linux
 
 ## Licença
-
-Projeto acadêmico. Uso educacional e demonstrativo.
