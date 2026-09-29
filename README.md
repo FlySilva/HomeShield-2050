@@ -75,5 +75,3 @@ npm run build
 - Gabriel Santos — Analista de Incidentes / SIEM e Monitoramento
 - Gustavo — Engenheiro de Backup e Recuperação
 - Vago — Testador de Intrusão / Kali Linux
-
-## Licença
